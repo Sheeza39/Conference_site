@@ -79,24 +79,38 @@ body{
 
 .program-section{
     background-image: url('images/backgr2.png');
-    height: 750px;
+    height: 600px;
     text-align: center;
     padding: 10px;
+    
 }
 
-.program-section h1{
+
+.program-section h1 {
     color: #fff;
     font-size: 25px;
     font-weight: 400;
-    border-bottom: solid #EC5242 ;
+    position: relative;
+    padding-bottom: 10px; /* Adds space between text and line */
+}
 
-
+.program-section h1::after {
+    content: "";
+    display: block;
+    width: 50px; /* Adjust this to control the line length */
+    height: 2px; /* Line thickness */
+    background-color: #EC5242;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .event-item{
     display: flex;
     flex-direction: row;
-    background-color: rgb(138, 138, 138, 0.5);
+    background-color: rgba(72, 72, 72, 0.5);
     align-items: center;
     margin: 10px;
     padding: 4px;
@@ -109,8 +123,25 @@ body{
 }
 
 .event-item h3{
+ font-size: 16px;
     color: #EC5242;
+    margin-left: 9px;
 }
 .event-item p{
+    font-size: 11px;
+    padding-left: 10px;
+    color: #fff;
+    padding-left: auto;
+    text-align: left;
+}
+
+.program-section button{
+
+   margin-top: 30px;
+    background-color: #EC5242;
+    height: 60px;
+    width: 250px;
+    font-size: medium;
+    border: #EC5242;
     color: #fff;
 }
