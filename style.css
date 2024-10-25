@@ -6,27 +6,27 @@ body{
      padding: 0;
 }
 
-/* Basic styling for mobile menu */
+
 #mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white; /* Adjust to your design */
+    background-color: white; 
     color: #fff;
-    display: none; /* Initially hidden */
+    display: none; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   
-  /* Styling when the menu is visible */
+  
   #mobile-menu.active {
     display: flex;
   }
   
-  /* Hamburger Button Styling */
+  
   #hamburger-btn {
     font-size: 38px;
     cursor: pointer;
@@ -91,14 +91,14 @@ body{
     font-size: 25px;
     font-weight: 400;
     position: relative;
-    padding-bottom: 10px; /* Adds space between text and line */
+    padding-bottom: 10px; 
 }
 
 .program-section h1::after {
     content: "";
     display: block;
-    width: 50px; /* Adjust this to control the line length */
-    height: 2px; /* Line thickness */
+    width: 50px; 
+    height: 2px; 
     background-color: #EC5242;
     margin: 0 auto;
     position: absolute;
@@ -144,4 +144,124 @@ body{
     font-size: medium;
     border: #EC5242;
     color: #fff;
+}
+
+.Featured-dev{
+    
+}
+
+    .speakers {
+       display: flex;
+       flex-direction: row-reverse;
+    }
+    
+
+
+.Featured-dev h1{
+
+color: black;
+margin-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 77px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.Featured-dev h1::after {
+    content: "";
+    display: block;
+    width: 50px; 
+    height: 2px; 
+    background-color: #EC5242;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.image-container {
+    order:2;
+    position: relative;
+    display: inline-block; 
+}
+.back-img,.speaker-img{
+    margin-left: 20px;
+}
+.back-img{
+    width:80px;
+    
+} 
+
+.speaker-img{
+    width:90%;
+    position: absolute;
+    top: 10px; 
+    left: 20px; 
+    border-radius: 0%; 
+    border: 3px solid white; 
+}
+
+.text-content {
+    order:1;
+    margin-left: 70px; 
+    color: #333;
+}
+
+.para1 {
+        font-family:italic;
+        font-weight: 500px;
+        font-size: 14px;
+        margin: 5px 0;
+        color: #EC5242;
+}
+
+.text-content h3 {
+    
+    font-size: 18px;
+    margin: 5px 0;
+    color: black; 
+}
+
+.para2 {
+    font-weight: 500px;
+    font-size: 14px;
+    margin: 5px 0;
+    margin-bottom: 30px;
+}
+.hidden {
+    display: none;
+}
+
+.more-button{
+    text-align: center;
+  
+}
+.more-button button{
+    background: #fff;
+    padding: 10px;
+    width: 100%;
+    margin-left: 20px;
+    
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+   width: 100px;
+   height: auto; 
+   padding: 20px;
+}
+
+footer h4{
+    font-weight: 100;
+    color: gray;
+
 }
